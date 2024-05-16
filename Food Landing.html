@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Landing page|| Deepu's Restuarent's</title>
+    <style>
+        .container{
+             font-family: sans-serif;
+        }
+        .minicontainer{
+            background-image: url(./chef.jpg);
+        
+            /* background-image: url("/w3images/photographer.jpg"); */
+  background-color: #cccccc;
+  height: 1000px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  /* color: aliceblue; */
+        }
+
+        .navbar{
+            display: flex;
+            flex-direction: row;
+            padding: 2rem 2rem;
+        }
+        .nav_elements ul{
+            display: flex;
+             flex-direction: row;
+             gap: 6rem;
+             font-size: 1.2rem;
+             /* margin-top: 9rem; */
+             position: absolute;
+           
+
+        }
+        .nav_elements ul li a{
+             text-decoration: none;
+             color:rgb(8, 8, 8);
+             font-weight: bolder;
+             font-size: 1.5rem;
+             z-index: 1;
+            
+
+        }
+        .nav_elements ul li{
+             list-style: none;
+             display: flex;
+             flex-direction: row;
+             gap: 2rem;
+             
+
+        }
+        .navbar img{
+               border-radius: 10rem;
+        }
+        .navbar h1{
+
+             /* font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+             color: #0c0c0c71;
+             
+             /* font-weight: bolder; */
+             /* font-style: oblique; */
+             /* z-index: 2; */
+             position: relative;
+
+        }
+    .box
+    {
+        background-color: rgba(240, 248, 255, 0.516);
+        height: 80%;
+        width: 100%;
+
+    }
+        .font{
+            margin-top: -2rem; 
+             /* margin-left: 2rem; */
+            position: absolute;
+            /* z-index: 1; */
+            font-family: Arial, sans-serif;
+            /* background-color: rgba(240, 248, 255, 0.459); */
+            /* height: 55rem; */
+            width: 44rem;
+            /* width: 100%; */
+            /* box-shadow: 0px 0px 33px rgb(74, 74, 74); */
+            /* margin-top: 4REM; */
+        }
+        .font h1{
+             color:orange;
+             font-family: serif;
+             font-size: 3rem;
+             font-style: unset;
+             text-align: center;
+           
+             
+             /* font-weight: bolder; */
+           
+        }
+        .font p{
+            /* letter-spacing:
+            .3rem; */
+            padding: 2rem 2rem;
+            font-size: 1.3rem;
+
+       
+        }
+        .font h2{
+             text-align: center;
+             margin-left: 7rem;
+             margin-top: -1rem;
+             font-size: 2rem;
+             font-weight: 800;
+             /* font-family: monospace; */
+        }
+          h1,h2{
+   /* width: 90%; */
+  /* height:80% ; */
+  /* background-color: red; */
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+@keyframes example {
+  0%   {left:0px; top:0px;
+    
+}
+  25%  { left:1px; top:0px;}
+  
+}
+.p{
+   width: 90%;
+  height:80% ;
+  /* background-color: red; */
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+@keyframes example {
+  0%   {left:0px; top:0px;
+    
+}
+  25%  { left:100px; 
+  bottom: 2px;
+    top:0px;}
+    50%  {background-color:rgba(165, 165, 241, 0.368); left:200px; top:0;}
+  
+}
+
+.input{
+  padding: .5rem;
+  font-size: 1rem;
+  border: none;
+}
+button{
+  background-color: rgb(234, 9, 9);
+  padding: .5rem;
+  border: none;
+  font-size: 1rem;
+  box-shadow: 0px 1px 2px gray;
+
+}
+.font1{
+   color: rgba(250, 14, 14, 0.77);
+   font-family:serif;
+   font-weight: bolder;
+   font-size: 2rem;
+  
+  }
+.f{
+  color: rgb(12, 10, 10);
+  position: absolute;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  
+}
+
+.cont2{
+   display: flex;
+   padding: 4rem 2rem;
+   gap: 22rem;
+   margin-left: 6rem;
+   margin-right: 6rem;
+}
+.box1
+{
+  width: 222px;
+  height: 100%;
+
+}
+.box2
+{
+  width: 222px;
+  height: 100%;
+
+}.box3
+{
+  width: 222px;
+  height: 100%;
+
+}
+.img
+{
+    border: 1px solid black;
+    padding: 2rem 2rem;
+    margin: 2rem;
+    width: 322px ;
+  height: 34rem;
+  background-color: rgba(11, 11, 11, 0.818);
+  box-shadow: 0px 2px 12px rgb(67, 65, 19);
+  transform: scale(22px);
+  transition-duration: 2s;
+}
+.img:hover{
+  transform: scale(1.1);
+  transition-duration: 1s;
+  background-color: rgb(143, 89, 89);
+  box-shadow: 0px 0px 22px rgb(35, 30, 30);
+
+}
+.i{
+  width: 322px ;
+  height: 222px ;
+  /* background-color: rgb(95, 107, 116); */
+  /* border-radius: 9rem; */
+}
+
+.img p{
+   font-size: 1.2rem;
+  /* font-family: cursive; */
+  font-family: 'Georgia', serif;
+  /* font-family: 'Times New Roman', Times, serif; */
+
+
+
+
+  color: aliceblue;
+
+   /* font-family: monospace; */
+}
+.foo{
+     text-align: center;
+     font-size: 4rem;
+     margin-top: 2rem;
+     font-weight: bolder;
+}
+.special{
+  color: orange;
+
+}
+
+.text{
+  text-align: center;
+  /* text-deoration: double; */
+font-weight: bolder;
+font-size: 2.3rem;
+font-family:serif;
+
+}
+.text .first{
+  color: rgba(254, 167, 5, 0.556);
+  font-weight: bolder;
+
+
+}
+ .text .second{
+   margin-top:-1rem;
+   
+}
+.content{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   gap: 5.4rem;
+   padding: 4rem 2.3rem;
+   margin: 2rem 2rem;
+
+}
+.content img{
+   height: 32rem;
+   width: 43rem;
+}
+.review p{
+  font-size: 1.5rem;
+  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+  font-family: cursive;
+
+}
+/* Footer Styles */
+
+footer {
+    background-color: rgba(4, 4, 4, 0.652);
+    color: #fff;
+    padding: 40px 0;
+    font-size: 14px;
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-logo img {
+    width: 150px;
+    height: auto;
+}
+
+.footer-info {
+    margin-bottom: 20px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.footer-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: #ffd700; /* Change color on hover */
+}
+
+.footer-social {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2); /* Increase size on hover */
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-links ul li {
+        margin-bottom: 10px;
+    }
+}
+
+
+
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+ <div class="minicontainer">
+    
+
+   <div class="navbar">
+       <div class="image">
+           <img src="./food.jpg" alt="foodlogo" width="77px" >
+          <!-- <h1>Deepu's <br>
+            Restuarent</h1>  -->
+
+       </div>
+      <div class="nav_elements">
+        <ul>
+            <li><a href="Home">Home</a></li>
+            <li><a href="Menu">Menu</a></li>
+            <li><a href="Recipes">Recipes</a></li>
+            <li><a href="About Us">About Us</a></li>
+            <li><a href="Contact">Contact</a></li>
+           
+        </ul>
+        
+      </div>
+
+
+   
+   </div>
+   <div class="box">
+   <div class="font">
+    <h1>Eat you desire food</h1>
+    <h2>Be hungry to test good</h2>
+    <p class="p">Experience the finest culinary delights in the heart of [Hyderbad]. At Deepu's 
+        Restuarent , we blend fresh, locally-sourced ingredients with innovative recipes to create unforgettable dishes. Whether it's a casual lunch, a romantic dinner, or a family gathering, our warm ambiance and exceptional service ensure a memorable dining experience every time. Join us and savor the flavors!
+        
+      
+
+
+        <br><br><br><br><br>
+        <input type="text" placeholder="Search recipes..." name="query"  class="input" required>
+        <button type="submit">Search</button>
+        
+
+
+        <br><br><br><br>
+         
+      
+    <font class="font1">1200+</font><br>
+    <font class="f">Chef's</font>
+
+    <br><br><br>
+     
+    <font  class="font1">1000+</font><br>
+    <font class="f">Recipes</font>
+  
+    <br><br><br>
+     
+    <font  class="font1">4.8  ⭐</font><br>
+    <font class="f">Rating</font>
+      </p>
+
+
+     
+        
+    
+    </div>
+    </div>
+  </div>
+    <div class="second">
+      <div class="foo"><span class="special">Our Special</span>  <span class="food">Food</span></div>
+          <div class="cont2">
+            
+               <div class="box1" class="b"> 
+                <div class="img" >
+                       <img src="./biry.jpeg" alt="" id="img1" width="222px" class="i">
+                       <p><b>Chicken Biryani</b> is a fragrant and flavorful dish featuring tender chicken pieces cooked with aromatic basmati rice, a blend of spices, and herbs. This layered and richly seasoned delicacy is garnished with fried onions and fresh coriander, offering a delicious and satisfying meal.</p>
+
+
+                </div>
+
+               </div>
+               <div class="box2" class="b"> 
+                <div class="img" id="img2">
+                  <img src="./thali.jpeg" alt="" width="222px" class="i" >
+                  <p><b> Veg Thali</b> is a delightful platter featuring an assortment of flavorful vegetarian dishes. It typically includes fragrant rice, fresh roti or naan, a variety of curries, savory dal, tangy pickles, refreshing raita, and a sweet dessert. Perfect for experiencing a balanced  taste of Indian cuisine.</p>
+
+
+           </div>
+
+               </div>
+               <div class="box3" class="b">
+                <div class="img" id="img3">
+                  <img src="./chilli.jpg" alt="" width="222px" class="i">
+                  <p><b>Chilli Chicken</b> is a popular Indo-Chinese dish featuring tender, boneless chicken pieces stir-fried with vibrant bell peppers, onions, and green chilies in a spicy, tangy sauce. Perfectly balanced with bold flavors, it offers a delightful kick in every bite.</p>
+
+
+           </div>
+
+
+               </div>     </div>
+               <div class="customer">
+                   <div class="text">
+                    <p class="first">Our Lovely Customers</p>
+                    <p class="second">Loves Our Food</p>
+                   </div>
+
+
+                   <div class="content">
+
+                        <div class="image">
+                          <img src="./customer.jpg" alt="image" width="422px">
+
+
+
+                        </div>
+                     <div class="review">
+                      <p>I recently dined at Deepu's Restaurant and had an excellent experience! The food was absolutely delicious, with each dish bursting with authentic flavors. The Chilli Chicken was perfectly spicy and tender, while the Chicken Biryani was aromatic and rich, featuring beautifully cooked rice and succulent chicken pieces. The Veg Thali offered a delightful variety of vegetarian dishes, each one tastier than the last. The service was prompt and friendly, and the ambiance was warm and inviting. I highly recommend Deepu's Restaurant for a fantastic dining experience!
+                        I had high expectations for Deepu's Restaurant based on the reviews, but my experience was a bit mixed. The samosas and mango lassi were fantastic, but the chicken tikka masala was just okay. It lacked the depth of flavor I was hoping for. The staff were pleasant, but the wait time was longer than expected, even though the restaurant wasn’t very crowded. I might give it another try on a different day."
+                        <br><br>⭐ ⭐ ⭐ ⭐ <br><br>
+                        <b>Rating: 4.8/5</b>
+                        <br>
+                      <b>
+                        Cleanliness: 4.5/5</b>
+                      </p>
+                      
+                      <p>Best Restuarent....⭐</p>
+
+                     </div>
+
+
+                   </div>
+               </div>
+    </div>
+</div>
+<footer>
+  <div class="footer-content">
+      <div class="footer-logo">
+          <img alt="Deepu's Restaurant" width="22px">
+      </div>
+      <div class="footer-info">
+          <p>Address: 123 Main Street, City, State ZIP</p>
+          <p>Phone: 7036118321</p>
+          <p>Email: info@deepusrestaurant.com</p>
+      </div>
+      <div class="footer-links">
+          <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="/menu">Menu</a></li>
+              <li><a href="/reservations">Reservations</a></li>
+              <li><a href="/about">About Us</a></li>
+              <li><a href="/contact">Contact Us</a></li>
+          </ul>
+      </div>
+  </div>
+  <div class="footer-social">
+      <p>Follow us:</p>
+      <div class="social-icons">
+          <a href="#"><img src="facebook.png" alt="Facebook"></a>
+          <a href="#"><img src="twitter.png" alt="Twitter"></a>
+          <a href="#"><img src="instagram.png" alt="Instagram"></a>
+      </div>
+  </div>
+  <div class="footer-bottom">
+      <p>&copy; 2024 Deepu's Restaurant. All Rights Reserved.</p>
+  </div>
+</footer>
+
+
+
+
+</body>
+</html>

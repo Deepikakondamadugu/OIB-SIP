@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deepika PortFolia</title>
+    <style>
+
+    *{
+         padding:0;
+        margin: 0;
+        box-sizing: border-box;
+        background-color:black;
+        
+    }
+
+    body{
+         height: 100%;
+         width: 100%;
+         padding: 10px 10%;
+         margin: 10px 10px ;
+
+    }
+
+    .navbar{
+
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+    }
+    .nav ul  {
+        display:flex;
+        flex-direction: row;
+        list-style: none;
+
+        gap: 2rem;
+          /* justify-content: space-between; */
+           flex-wrap: wrap;
+    }
+    .nav ul li a{
+         text-decoration: none;
+         color: aliceblue;
+         font-size: 1.4rem;
+         font-family:sans-serif;
+         position: relative;
+    }
+    .nav ul li a::after{
+      content: '';
+       height: 3px;
+       width: 0%;
+       background-color: red;
+       position: absolute;
+       left: 0;
+       bottom: -6px;
+       transition: 0.5s;
+
+    }
+    .nav ul li a:hover::after{
+     width: 100%;
+
+    }
+.about{
+      color:white;
+       margin-top: 20%;
+       font-size: 30px;
+       /* padding: 1.1rem; */
+
+
+      
+}
+.about h1{
+     margin:0.1rem;
+     margin-top: 20px;
+}
+.tab-contents span{
+       color: rgba(255, 0, 0, 0.952);
+}
+.about span{
+       color: rgba(255, 0, 0, 0.952);
+}
+.aboutme{
+      color: white;
+      margin-top: 30%;
+}
+.aboutme h1{
+      font-size: 3.9rem;
+
+}
+.aboutme p{
+      margin-top: 1rem;
+      padding: 2rem;
+      font-size: 2rem;
+      /* font-family: sans-serif; */
+      font-family: cursive;
+      /* height: 100vh; */
+}
+.aboutme{
+      /* height: 100vh; */
+}
+.content{
+      display:flex;
+      margin-top: 10px;
+       justify-content: space-around;
+       position: relative;
+
+}
+.links{
+     position: relative;
+}
+.links::after{
+     content: '';
+       height: 3px;
+       width: 0%;
+       background-color: red;
+       position: absolute;
+       left: 0;
+       bottom: -6px;
+       transition: 0.5s;
+}
+.links:hover::after{
+     width:100%;
+     
+}
+.links.active-link:after{
+     width:50%;
+     
+}
+.tab-contents{
+      margin-top: 10%;
+      font-size: 1.4rem;
+      padding: 10px 0px ;
+      margin: 10px 0px;
+      /* font-weigt: bolder; */
+      font-family: sans-serif;
+
+}
+.tab-contents ul li{
+        list-style: none;
+       padding: 1.2rem;
+       margin: 1.2rem;
+}
+.tab-contents ul li span{
+      font-size: 1rem;
+}
+
+.tab-contents{
+     display: none;
+}
+.tab-contents.active-tab{
+     display: block;
+}
+.contact_me{
+     color: white;
+}
+
+
+#contact {
+  padding: 50px 0;
+  text-align: center;
+}
+
+#contact h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+#contact p {
+  font-size: 1.2rem;
+  color: #888;
+  margin-bottom: 30px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;  /* Ensures padding doesn't affect width */
+}
+
+.form-group textarea {
+  height: 150px;
+}
+
+button[type="submit"] {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button[type="submit"]:hover {
+  background-color: #3e8e41; /* Darker green */
+}
+section{
+     color: aliceblue;
+}
+::placeholder{
+     color: #10ea17;
+     font-size: 1rem;
+     font-weight: 700;
+}
+#name::placeholder{
+      text-align: center;
+     
+
+}
+
+#email::placeholder{
+      text-align: center;
+      
+      
+}
+input,textarea{
+  color: #ccc;
+  font-size: 1.2rem;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+               <div class="navbar">
+                 <div class="image">
+                    <img src="./deepika.png" alt="deepu" width="222px">
+                 </div>
+                 <div class="nav">
+                
+                      <ul>
+                        <li><a href="Home">Home</a></li>
+                        <li><a href="About">About</a></li>
+                        <li><a href="Portfolia">Portfolia</a></li>
+                        <li><a href="Contact">Contact</a></li>
+                        <!-- <li><a href=""></a></li> -->
+                      </ul>
+                 </div>
+
+
+
+
+               </div>
+
+
+               <div class="about">
+                 <p>Web Developer</p>
+                 <h1>Hi,I am <span>
+                    Deepika</span><br>
+                    from India</h1>
+                    
+
+
+
+               </div>
+          </div>
+               <div class="aboutme">
+             <h1>About Me</h1>
+             <p>Hi there! I'm Deepika, and I'm an enthusiastic beginner web developer.  I've always been fascinated by the way websites work, and I recently started learning to code through online courses. I'm proficient in HTML, CSS, and the basics of JavaScript. While I'm still at the beginning of my journey, I'm a fast learner and eager to expand my skillset. My dream is to build user-friendly and visually appealing web applications. I'm particularly interested in working on WEB APPLICATIONS. Feel free to browse my projects and get in touch if you have any opportunities that might be a good fit for me!</p>
+             <div class="content">
+                 <div class="links active-link" onclick="openlink('skills')"> 
+                 <h2>Skills</h2>
+
+                 </div>
+                 <div class="links"  onclick="openlink('education')">
+                    <h2>Education</h2>
+                 </div>
+                 <div class="links"  onclick="openlink('experience')">
+                    <h2>Experience</h2>
+                 </div>
+
+             </div>
+              <div class="tab-contents active-tab" id="skills">
+               
+               <ul>
+                    <li><span>Web Development</span><br> Web Sites Development</li>
+                    <li><span>Coder</span><br>Well Coder in Coding Platform </li>
+                    <li><span>Communication Skills</span><br>Spoken Skills in English Language</li>
+               </ul>
+
+                     
+
+
+              </div>
+              <div class="tab-contents " id="education">
+               
+               <ul>
+                    <li><span>Secondary Education(2016-2020)</span><br> TS Model School</li>
+                    <li><span>Pre-University Course(2020-2022)</span> <br>RGUKT (IIIT Basar)</li>
+                    <li><span>B.tech Pursuing(2022-2026)</span><br>RGUKT (IIIT Basar)</li>
+               </ul>
+
+                     
+
+
+              </div>
+              <div class="tab-contents" id="experience">
+               
+               <ul>
+                    <li><span>Web Development Interships</span><br>InfoByte</li>
+          <li>
+               CodeSoft</li>
+                   
+               </ul>
+              </div>
+               </div>
+    <!-- <div class="contact_me">
+           <div class="container">
+               <div class="left_container">
+                    <h1>Contact Me</h1>
+                    <div class="ph">
+                  <span><a href="#"></a><p>deepukondamadugu113@gmail.com</p></span>
+                  <span><a href="#"></a><p>7036118321</p></span></div>
+                  <div class="symbols">
+                        <a href=""></a>
+                        <a href=""></a>
+                        <a href=""></a>
+                        <a href=""></a>
+
+                      
+                  </div>
+
+               </div>
+               <div class="right_container">
+                    <div class="elements">
+                         <input type="text" placeholder="Enter Your Name...">
+                         <input type="text" placeholder="Your Email">
+                         <textarea name="deepu" id="deepu" cols="30" rows="10" placeholder="Your Massage"></textarea>
+
+                    </div>
+        <button>Submit</button>
+
+               </div>
+
+
+           </div> -->
+    </div>
+
+    <section id="contact">
+     <h2>Get In Touch</h2>
+     <p>Have a project in mind? Feel free to reach out!</p>
+     <form action="mailto:youremail@example.com">  <div class="form-group">
+         <label for="name" >Name</label>
+         <input type="text" id="name" name="name" placeholder="Enter Your Name" required>
+       </div>
+       <div class="form-group">
+         <label for="email">Email</label>
+         <input type="email" id="email" name="email" placeholder="Enter Your Email" required>
+       </div>
+       <div class="form-group">
+         <label for="message">Message</label>
+         <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+       </div>
+       <button type="submit">Send Message</button>
+     </form>
+   </section>
+</div>
+
+<script>
+     var links=document.getElementsByClassName("links");
+     var tab=document.getElementsByClassName("tab-contents");
+      function openlink(tabname){
+          for(tablink of links){
+               tablink.classList.remove("active-link");
+          }
+          for(tabcontent of tab){
+               tabcontent.classList.remove("active-tab");
+          }
+          event.currentTarget.classList.add("active-link");
+          document.getElementById(tabname).classList.add("active-tab");
+
+      }
+
+</script>
+    
+    
+</body>
+</html>

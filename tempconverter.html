@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tempconverter....</title>
+   <style>
+body{
+    background-color: rgba(167, 223, 223, 0.895);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.tempform{
+    text-align: center;
+     border: 1px solid bisque;
+
+     width: 40%;
+     box-shadow: 2px 2px 22px;
+     margin: auto;
+     padding: 22px;
+     background-color: #ededf3;
+     margin-top: 2rem;
+    
+}
+h1{
+    color: brown;
+}
+#num{
+    text-align: center;
+    font-weight: bold;
+    font-size: medium;
+}
+label{
+    font-weight: bold;
+    font-family:sans-serif;
+}
+#sub{
+    background-color: rgb(228, 62, 62);
+    border: none;
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    color: #ededf3;
+    border-radius:0.3rem;
+    cursor: pointer;
+}
+#sub:hover{
+    background-color: rgb(241, 176, 176);
+}
+#text{
+    font-weight: bold;
+    font-size: 1rem;
+
+}
+
+   </style>
+</head>
+<body>
+    
+     <form class="tempform">
+   <h1>Temperature Converter:</h1>
+   <input type="number" id="num" value="0"> <br><br>
+    <input type="checkbox" value="tofahrenheit" id="f">
+    <label for="Fahrenheit">Fahrenheit-->°F</label><br><br>
+
+    <input type="checkbox" value="Celsius" id="c">
+    <label for="Celsius"> Celsius-->°C </label><br><br>
+
+
+    <button type="button" id="sub"  onclick="f1()"> Submit</button>
+    <P>---Result---</P>
+    <p id="text"></p>
+    <script src="tempconverter.js"></script>
+
+
+     </form>
+     <script>
+          const textBox=document.getElementById("num");
+const fah=document.getElementById("f");
+const cel=document.getElementById("c");
+
+const result=document.getElementById("text");
+let temp;
+function f1(){
+     if(cel.checked && fah.checked){
+        result.textContent="Select only One Option";
+     }
+     else{
+
+
+
+ if(fah.checked){
+    temp=Number(textBox.value);
+    temp=temp*9/5+32;
+    result.textContent=temp+"°F";
+ }
+ else if(cel.checked){
+    temp=Number(textBox.value);
+    temp=5/9*(temp-32);
+    result.textContent=temp+"°C";
+ }
+
+ else{
+    result.textContent="select a unit";
+ }
+
+
+}
+}
+     </script>
+</body>
+
+</html>
